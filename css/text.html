@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linking of the styles</title>
+      <!-- external -->
+      <link rel="stylesheet" href="style.css">
+
+    <!-- internal style -->
+     <style>
+        /* writing style for single element */
+
+            /* p{
+                color: blue !important;
+            } */
+
+            /* writing styles for multipull elements */
+
+             p, h1, h2, div , span, a, li, ul, ol{
+                color: blue !important;
+            }
+
+            /* class, id  */
+     </style>
+   
+</head>
+<body>
+    <h1>i am heading tag</h1>
+    
+    <p style="color:yellow !important"> i am a paragraph</p>
+
+    <p> i am a paragraph</p>
+    <p> i am a paragraph</p>
+    <p> i am a paragraph</p>
+    <p> i am parent one 
+        <p style="color: red;"> i am child 
+            <p style="color: pink;"> i am grand child</p>
+        </p>
+    </p>
+
+    
+
+    <!-- inline style -->
+    <!-- internal style -->
+    <!-- external style -->
+
+    <p style="color: red !important;"> i am a inline styled paragraph</p>
+</body>
+</html>
