@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* id selector id is selected by # */
+        #idpara {
+            color: rgb(139, 2, 2);
+        }
+
+        /* class selector class is selected by dot*/
+        .paragraph {
+            color: yellow;
+        }
+
+        /* element selector or single element */
+        p {
+            color: blue;
+        }
+
+        /* multiple element selector */
+        div,
+        p {
+            color: red;
+        }
+
+        /* universal selector or all elements selector */
+        * {
+            color: green;
+        }
+
+        /* descendant selector useing this selector selecting all child elements of parent */
+        .parent p {
+            color: orange;
+        }
+        /*this select used to select the only direct child elements*/
+        .parent > p {
+            color: rgb(36, 35, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <p class="paragraph" id="idpara">i am paragraph</p>
+    <div>this div</div>
+    <!-- <span>hi</span>
+    <a href="">link</a>
+    <li>list item</li>
+    <ul>unordered list</ul> -->
+    <div class="parent">
+        <p>child
+        <p>
+
+        <p>grand child</p>
+        
+        </p>
+        </p>
+        <p>child</p>
+        <p>child</p>
+        <p>child</p>
+        <div>
+            <p>not a direct child</p>
+        </div>
+    </div>
+
+    <p>child</p>
+    <p>child</p>
+    <p>child</p>
+    <p>child</p>
+</body>
+
+</html>
