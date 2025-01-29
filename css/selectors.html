@@ -34,11 +34,43 @@
 
         /* descendant selector useing this selector selecting all child elements of parent */
         .parent p {
-            color: orange;
+            /* color: orange; */
         }
-        /*this select used to select the only direct child elements*/
-        .parent > p {
-            color: rgb(36, 35, 2);
+
+        body h2 {
+            color: rgb(151, 146, 6);
+        }
+
+        /*this child selector select used to select the only direct child elements child selector has high specificity comapre to decendent*/
+        .parent > .child {
+            color: hsl(58, 87%, 24%);
+        }
+
+        body > h2 {
+            color: black;
+        }
+
+        /* sibling selector of adjecent */
+        h1 + p {
+            color: hsl(19, 86%, 22%);
+        }
+
+        /* general all  sibling selector */
+        h1 ~ p {
+            color: hsl(263, 46%, 25%);
+        }
+        /* combine selector */
+        /* decendent selector and child selector adjecent selector and all sibling selector */
+
+        /* specificity */
+        /* 1 id selector 
+        2 class selector
+        3 element selector
+        
+        */
+/*  attribute selector */
+        input[type="text"] {
+            color: hsl(0, 0%, 0%);
         }
     </style>
 </head>
@@ -55,7 +87,7 @@
         <p>
 
         <p>grand child</p>
-        
+
         </p>
         </p>
         <p>child</p>
@@ -70,6 +102,24 @@
     <p>child</p>
     <p>child</p>
     <p>child</p>
+    <h2> i am heading parent
+        <h2> i am heading child</h2>
+    </h2>
+
+    <div>
+        <h2> i am another heading</h2>
+    </div>
+
+    <h1> i am a heading</h1>
+    <p> i am first sibling of h1
+        <p> child </p>
+    </p>
+    <div> i am another</div>
+    <div> hi second one</div>
+    <p>i am second sibling of h1</p>
+    <p> i am third </p>
+
+    <input type="text" name="" id="">
 </body>
 
 </html>
