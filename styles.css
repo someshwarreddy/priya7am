@@ -1,0 +1,26 @@
+/* ...existing code... */
+
+@media print {
+    /* Hide navigation bar */
+    nav {
+        display: none;
+    }
+
+    /* Adjust font size for better readability */
+    body {
+        font-size: 12pt;
+    }
+
+    /* Ensure links are visible */
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    /* Hide unnecessary elements */
+    .no-print {
+        display: none;
+    }
+}
+
+/* ...existing code... */
