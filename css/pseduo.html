@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelements and classes</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star" />
+    <style>
+        @import url("fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star");
+        /* Pseudo-elements and pseudo-classes are used to add special effects to some selectors. */
+        /* A pseudo-class is used to define a special state of an element. */
+        /* For example, it can be used to: Style an element when a user mouses over it */
+        /* A pseudo-element is used to style specified parts of an element. */
+        /* For example, it can be used to: Style the first letter, or line, of an element */
+        /* The ::before pseudo-element inserts something before the content of the selected elements. */
+        /* The ::after pseudo-element inserts something after the content of the selected elements. */
+        /* The ::first-line pseudo-element is used to add a special style to the first line of a text. */
+        /* The ::first-letter pseudo-element is used to add a special style to the first letter of a text. */
+        /* The ::selection pseudo-element is used to style the portion of an element that is selected by a user. */
+        /* The ::placeholder pseudo-element is used to style the placeholder text of an input field. */
+        /* The ::marker pseudo-element is used to style the marker of a list item. */
+        /* The ::spelling-error, ::grammar-error, and ::inactive-selection pseudo-elements are used to style the portion of an element that is selected by a user. */
+        /* The ::before and ::after pseudo-elements can be used to insert generated content before or after an element's content. */
+        /* The ::before and ::after pseudo-elements are used to add generated content to an element. */
+        /* The ::before and ::after pseudo-elements are used to add cosmetic content to an element. */
+        /* The ::before and ::after pseudo-elements are used to add decorative elements to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special effects to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special characters to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special symbols to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special icons to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special shapes to an element. */
+        /* The ::before and ::after pseudo-elements are used to add special arrows to an element. */
+
+        div::before {
+            content: "star";
+            color: red;
+            /* background-image: url('/css/boxmodel.png');                */
+        }
+
+        div::after {
+            content: "#######";
+            color: blue;
+        }
+
+        div::first-line {
+            color: green;
+        }
+
+        div::first-letter {
+            color: rgb(0, 26, 255);
+            font-size: 30px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        this is a div
+        second line
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/normalize.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-size: 0; */
+        }
+
+        body,html {
+            /* default body and html fontsize is 16px; */
+            font-size: 8px;
+            /* font-size: 100%; */
+            
+        }
+
+        ul {
+            font-size: inherit;
+            list-style-type: none;
+             /* em does not dependents on the parent thta is main html font size which is only dependent on the parent font size             */
+            /* font-size: 2em; */
+            /* rem depends on the main html tag font size that is 16px */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> one list item
+            <ul>
+                <li>
+                    list one child item
+                </li>
+            </ul>
+        </li>
+        <li>list two</li>
+    </ul>
+</body>
+
+</html>
