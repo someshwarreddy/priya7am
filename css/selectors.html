@@ -42,23 +42,24 @@
         }
 
         /*this child selector select used to select the only direct child elements child selector has high specificity comapre to decendent*/
-        .parent > .child {
+        .parent>.child {
             color: hsl(58, 87%, 24%);
         }
 
-        body > h2 {
+        body>h2 {
             color: black;
         }
 
         /* sibling selector of adjecent */
-        h1 + p {
+        h1+p {
             color: hsl(19, 86%, 22%);
         }
 
         /* general all  sibling selector */
-        h1 ~ p {
+        h1~p {
             color: hsl(263, 46%, 25%);
         }
+
         /* combine selector */
         /* decendent selector and child selector adjecent selector and all sibling selector */
 
@@ -68,7 +69,7 @@
         3 element selector
         
         */
-/*  attribute selector */
+        /*  attribute selector */
         input[type="text"] {
             color: hsl(0, 0%, 0%);
         }
@@ -112,7 +113,7 @@
 
     <h1> i am a heading</h1>
     <p> i am first sibling of h1
-        <p> child </p>
+    <p> child </p>
     </p>
     <div> i am another</div>
     <div> hi second one</div>

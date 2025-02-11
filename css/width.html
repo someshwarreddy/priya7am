@@ -11,10 +11,11 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         #iamdiv {
             /* the diffrence between max-width and min-width is that max-width is used to set the maximum width of an element while min-width is used to set the minimum width of an element. max-width is used to prevent the element from having a width larger than the specified value while min-width is used to prevent the element from having a width smaller than the specified value */
-            /* the diffrence between inline and inline-block is that inline elements do not have a width or height, and they will only take up as much space as their content. Inline-block elements, on the other hand, have a width and height, and they will take up the space that you specify, regardless of their content. */ 
-            
+            /* the diffrence between inline and inline-block is that inline elements do not have a width or height, and they will only take up as much space as their content. Inline-block elements, on the other hand, have a width and height, and they will take up the space that you specify, regardless of their content. */
+
             display: inline-block;
             /* max-width: 250px; */
             min-width: 250px;
@@ -23,6 +24,7 @@
             background-color: red;
             margin: 20px;
         }
+
         /* $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -57,17 +59,15 @@
 	 }
 } */
 
-/* ...existing code... */
+        /* ...existing code... */
 
-@media print {
-    #iamdiv {
+        @media print {
+            #iamdiv {
                 background-color: rgb(0, 17, 128);
             }
-}
+        }
 
-/* ...existing code... */
-
-
+        /* ...existing code... */
     </style>
 </head>
 
@@ -81,7 +81,7 @@
     <div id="iamdiv">
         i am content
     </div>
-    <div id="iamdiv" >
+    <div id="iamdiv">
         i am content
     </div>
     <div id="iamdiv">
