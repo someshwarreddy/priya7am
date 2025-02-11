@@ -9,6 +9,25 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=star" />
     <style>
         @import url("fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star");
+       
+       
+        :root {
+    --border-width-size-16: 16px;
+    --breakpoint-desktop: 768px;
+    --color-primary-solid: #3c8cf0;
+    --color-text-white-90: #717a7b;
+    --color-text-white-100: #fff;
+    --color-text-darkaqua-100: #1b6670;
+    --color-text-deepaqua-100: #007185;
+    --color-text-rustyred-100: #ab2814;
+    --color-text-boulder-100: #717a7b;
+    --color-text-blue-100: #0079ff;
+    
+
+}
+
+       
+       
         /* Pseudo-elements and pseudo-classes are used to add special effects to some selectors. */
         /* A pseudo-class is used to define a special state of an element. */
         /* For example, it can be used to: Style an element when a user mouses over it */
@@ -54,11 +73,62 @@
         }
 
         div {
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             border: 2px solid black;
 
+            background: url('https://www.w3schools.com/cssref/paper.gif');
+            background-repeat: repeat;
+            background-color: #1b6670;
+            background-position: center;
+
         }
+
+        /* pseduo classes */
+        a:visited {
+            /* background-color: var(--color-text-rustyred-100); */
+            color: green
+
+            /* font-size: 30px; // this font size wiil not be applied */
+        }
+        div:hover {
+            background-color: var(--color-text-rustyred-100)
+        }
+        div:active {
+            background-color: var(--color-primary-solid);
+        }
+        input:focus {
+            background-color: var(--color-text-darkaqua-100);
+        }
+        a:active {
+            /* background-color: var(--color-text-darkaqua-100); */
+            /* font-size: 60px; */
+        }
+
+        ul > li {
+            color: blue;
+            list-style: none;
+            font-size: 30px;
+            vertical-align: middle;
+        }
+
+        li::before {
+            content: "⍟";
+            color: red;
+            font-size: 20px;
+            /* vertical-align: middle; */
+            /* align-items: center; */
+
+        }
+
+        ul > li:first-child {
+            color: pink
+        }
+
+        li:nth-child(2) {
+            color: green
+        }
+      
     </style>
 </head>
 
@@ -67,6 +137,16 @@
         this is a div
         second line
     </div>
+    <input type="text" name="" id="">
+    <a href="#">link</a>
+    <a href="#">link2</a>
+    <a href="#">link3</a>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
 </body>
 
 </html>
