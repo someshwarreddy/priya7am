@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            border: 2px solid blue;
+            height: 600px;
+            margin-top: 100px;
+            /* width: 500px; */
+            /* x -axis always control by the justify content and row with flexdirection */
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+
+            /* y axis to control yaxis ditection we flex direction as column and align items */
+            /* flex-direction: column; */
+                    
+        }
+
+        .flex-container div {
+            /* flex-grow: 1; */
+            height: 200px;
+            border: 2px solid red;
+        }
+        .child-three{
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            /* flex-basis: 200px; */
+            flex-basis: auto; /* based on the content*/
+            flex-basis: 50%;
+            flex-basis: 300px;
+
+        }
+        .child-one {
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+            /* flex-basis: 200px; */
+            flex-grow: 1;
+            flex-basis: 300px;
+
+        }
+        .child-two {
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            /* flex-basis: 200px; */
+            flex-basis: 300px;
+            flex-grow: 2;
+
+        }
+        .child-four {
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+            /* flex-shrink: 1; */
+            /* flex-basis: 200px; */
+            flex-grow: 3;
+            flex-basis: 300px;
+          
+        }
+    </style>
+
+
+<body>
+    <!-- flexbox -->
+    <div class="flex-container">
+        <div class="child-one">
+            one
+        </div>
+        <div class="child-two">
+            two
+        </div>
+        <div class="child-three">
+            three
+        </div>
+        <div class="child-four">
+            four
+        </div>
+    </div>
+
+</body>
+
+</html>

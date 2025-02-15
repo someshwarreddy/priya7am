@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            border: 2px solid blue;
+            height: 600px;
+            margin-top: 100px;
+            /* x -axis always control by the justify content and row with flexdirection */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            justify-content: start; /* starts at left*/
+            justify-content: end; /* ends at right*/
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: center;
+
+            /* y axis to control yaxis ditection we flex direction as column and align items */
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            align-items: start;
+            align-items: end;
+            align-items: center;         
+        }
+
+        .flex-container div {
+            height: 200px;
+            border: 2px solid red;
+        }
+    </style>
+
+
+<body>
+    <!-- flexbox -->
+    <div class="flex-container">
+        <div>
+            one
+        </div>
+        <div>
+            two
+        </div>
+        <div>
+            three
+        </div>
+        <div>
+            four
+        </div>
+    </div>
+
+</body>
+
+</html>
