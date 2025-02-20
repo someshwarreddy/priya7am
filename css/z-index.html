@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            width:200px;
+            height: 100px;
+            position: absolute;
+        }
+        div:nth-child(1) {
+            background-color: royalblue;
+            z-index: 6;
+            top:10px;
+            left:30px
+        }
+        div:nth-child(2) {
+            background-color: green;   
+            z-index:3;    
+            top:30px;
+            left:50px;
+        }
+        div:nth-child(3) {
+            background-color: yellow;
+            z-index: 2;
+            top:40px;
+            /* left:50px; */
+        }
+        div:nth-child(4) {
+            background-color: pink;
+            z-index: 4;
+            top:70px;
+        }
+        div:nth-child(5) {
+            background-color: orange;
+            top:90px;
+            left: 90px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div> 1 zindex 1</div>
+    <div> 2 zindex 3 </div>
+    <div> 3 zindex 2 </div>
+    <div> 4 zindex 4</div>
+    <div> 5 zindex 5 </div>
+</body>
+</html>
