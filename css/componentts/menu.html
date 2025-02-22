@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-dark-color: #10121A;
+            --border-color: #2e344e;
+            --background-light-color: #f1f1f1;
+            --white-color: #fff;
+            --font-light-color: #a4acc4;
+            --font-dark-color: #313131;
+            --font-dark-color-2: #151515;
+            --sidebar-dark-color: #191d2b;
+            --scrollbar-bg-color: #383838;
+            --scrollbar-thumb-color: #6b6b6b;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: var(--font-dark-color);
+            padding: 10px 0;
+
+        }
+
+        .nav-bar , .nav-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .nav-items .nav-list {
+            list-style: none;
+        }
+        #logo {
+            margin-right: 20px;
+            color: var(--white-color);
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        #search {
+            flex-grow: 2;
+            min-height: 35px;
+            padding:  6PX 20PX;
+            border-radius: 2px;
+            border: none;
+        }
+        .search-icon {
+            /* color: var(--white-color); */
+            position: relative;
+            right:40px;
+            vertical-align: middle;
+        }
+        .nav-items {
+            flex-grow: 1;
+            justify-content: space-evenly;
+        }
+
+        .nav-items .nav-list .nav-link {
+            color: var(--white-color);
+            text-decoration: none;
+            /* padding: 10px; */
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-bar">
+                    <a href="#" id="logo">logo</a>
+                    <label for="search"></label>
+                    <input type="search" name="search" id="search" placeholder="Search for products and more">
+                    <svg width="20" height="20" viewBox="0 0 17 18" class="search-icon" xmlns="http://www.w3.org/2000/svg"><g fill="#2874F1" fill-rule="evenodd"><path class="EwE-Fa" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="EwE-Fa" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+                    <ul class="nav-items">
+                        <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

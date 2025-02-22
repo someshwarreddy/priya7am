@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-big</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #10121A;
+            margin: 0 auto;
+            max-width: 1170px;
+        }
+
+        /* mobile approach */
+
+        .stay-updated {
+           
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .card-image img {
+            max-width: 100%;
+            border-radius: 10px 10px 0 0;
+            
+        }
+        #subcribe-button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 30px;
+        }
+        #email {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image {
+            order: -1;
+        }
+
+        @media (min-width: 768px) {
+            .card-container {
+                display: flex;
+                flex-direction: row;
+                background-color: #ffffff;
+                max-width: 600px;
+            }
+            .card-image {
+                order: 1;
+            }
+            .stay-updated {
+                padding: 20px;
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="stay-updated">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to get our latest news.</p>
+            <div>
+                <span>
+                    <img src="./assets/images/icon-list.svg" alt="icon-error">
+                </span>
+                <span>
+                    product updates
+                </span>
+            </div>
+            <div>
+                <span>
+                    <img src="./assets/images/icon-list.svg" alt="icon-error">
+                </span>
+                <span>
+                    product updates
+                </span>
+            </div>
+            <div>
+                <span>
+                    <img src="./assets/images/icon-list.svg" alt="icon-error">
+                </span>
+                <span>
+                    product updates
+                </span>
+            </div>
+            <form action="">
+                <label for="email">Enter address</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <button type="submit" id="subcribe-button">Subscribe</button>
+            </form>
+        </div>
+        <div class="card-image">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="card-image">
+        </div>
+    </div>
+</body>
+
+</html>
