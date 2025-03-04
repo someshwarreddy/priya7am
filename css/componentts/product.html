@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productdetails</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;   
+            flex-direction: column;
+        }
+        .product {
+            position: relative;
+            flex: 1;
+            margin: 10px; 
+            /* padding: 10px; */
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            /* display: flex; */
+        }
+        .product:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .product:hover .product-rating {
+            width:100%;
+            display: block;
+         
+        }
+        .product-image{
+            /* order: 1; */
+            height: auto;
+        }
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-info h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .product-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .product-info button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .product-info button:hover {
+            background-color: #555;
+        }
+        .product-image img {
+            padding: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        .product-rating {
+            position: absolute;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            display: none;
+        }  
+        @media (min-width: 536px) {
+            .product-container {
+                flex-direction: row;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="product-container">
+            <div class="product">
+                <div class="product-image">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+                </div>
+                <div class="product-info">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <h2>$100</h2>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-rating">
+                    3.5
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+                </div>
+                <div class="product-info">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <h2>$100</h2>
+                    <button>Add to Cart</button>
+                  
+                </div>
+                <div class="product-rating">
+                    3.5
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+                </div>
+                <div class="product-info">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <h2>$100</h2>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-rating">
+                    3.5
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+                </div>
+                <div class="product-info">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <h2>$100</h2>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-rating">
+                    3.5
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

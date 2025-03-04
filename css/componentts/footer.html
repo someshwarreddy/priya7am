@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --background-dark-color: #09122C;
+            --border-color: #2e344e;
+            --background-light-color: #f1f1f1;
+            --white-color: #fff;
+            --font-light-color: #a4acc4;
+            --font-dark-color: #313131;
+            --font-dark-color-2: #151515;
+            --sidebar-dark-color: #191d2b;
+            --scrollbar-bg-color: #383838;
+            --scrollbar-thumb-color: #6b6b6b;
+        }
+
+        .footer-section {
+            background-color: var(--background-dark-color);
+            color: var(--font-light-color);
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .footer-nav {
+            list-style: none;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer div {
+            flex: 1;
+            padding: 20px;
+        }
+        .heading {
+            color: var(--font-light-color);
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+        .footer-link {
+            text-decoration: none;
+            color: var( --white-color);
+            text-transform: capitalize;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer">
+                <div>
+                    <h3 class="heading">About</h3>
+                    <ul class="footer-nav">
+                        <li class="footer-list"><a href="contactus.html" class="footer-link">contact us</a></li>
+                        <li class="footer-list"><a href="aboutus.html" class="footer-link">about us</a></li>
+                        <li class="footer-list"><a href="careers.html" class="footer-link">careers</a></li>
+                    </ul>
+                </div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>
+                <h3 class="heading">Mail Us:</h3>
+                </div>
+                <div>6</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
