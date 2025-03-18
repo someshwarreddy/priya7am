@@ -11,6 +11,7 @@ console.log(aName);
 
 var newone;
 
+let blockscope;
 
 // console.log(iamlet); // reference error : canot access iamlet it value does not intilized
 let iamlet = 100;
@@ -57,23 +58,54 @@ student();
 // let vs var 
 
 
-// var is a function scope 
+// var is a function scoped
 
 var globalvar = 'i am global var';
+let iamgloballet = "i am global let";
+// global variable which are accessble and re writeble 
+// every where in program.
 
 function varscope() {
-    var a='i am function';
+    var a = 'i am function';
     var globalvar = 'i am function scope';
     globalvar = 'i am function scope'; // we are assigned a value for global var identifier
     console.log(globalvar); // this one excute second
+    iamgloballet = 'i function let '; // function variable
     // whenever we use var key word in a function for same idenifier which is declare in global scope 
     // that varibale becomes function scoped.
     // that variable value doesnot available to out side of the function.
     // here var globalvar = 'i am function scope ' it s value does not available to outside function scope 
     // because of var function scope behaviour.
+    var abc = 1
+     bac = 2;
+    var dab = 0;
 
 }
+
+console.log(bac);
 console.log(globalvar); // function did not called so this one will excute first 
 varscope();
+
 console.log(globalvar); // this one excute third 
-console.log(a); // Uncaught ReferenceError: a is not defined
+//console.log(a); // Uncaught ReferenceError: a is not defined
+console.log(iamgloballet);
+
+// let is block scope
+
+if (true) {
+    let iamgloballet = 'i am block scope';
+    let blockscope = 'i am stick to block scope'
+    var globalvar = 'iam block var'
+    var bad = 'i am bad var'
+    var can;
+    var db = '';
+    let mac = '';
+    // here the value of global var is available to outside of block scope;
+}
+console.log(db)
+console.log(bad);
+console.log(blockscope);
+console.log(iamgloballet);
+console.log(can);
+console.log(mac);
+let mac = '';
