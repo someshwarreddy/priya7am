@@ -35,18 +35,18 @@ learn();
 
 function one() {
     // console.log('one');
-    alert('one');
+    // alert('one');
 }
 
 function two() {
-    setTimeout(function c() {
-        // asynchronous code
-        for (let i = 0; i < 100; i++) {
-            // console.log(i);
-            alert(i);
-        }
+    // setTimeout(function c() {
+    //     // asynchronous code
+    //     for (let i = 0; i < 100; i++) {
+    //         // console.log(i);
+    //         alert(i);
+    //     }
 
-    }, 0);
+    // }, 0);
 
     // synchronous code
     // for (let i = 0; i < 100; i++) {
@@ -63,7 +63,65 @@ two(); // two will excute first because of call stack excution.
 one(); // one will excute second because of call stack excution.
 
 
+
 // example of call stack excution
+
+
+setTimeout(function a() {
+console.log(' i am a');
+
+}, 1000);
+
+setTimeout(function b() {
+    console.log(' i am b');
+}, 500);
+
+setTimeout(function c() {
+    console.log(' i am c');
+}, 5000);
+
+function d() {
+
+    console.log(' i am d');
+    setTimeout(function e() {
+        console.log(' i am e');
+    }, 0);
+    setTimeout(function f() {
+        console.log(' i am f');
+    }, 1000);
+    setTimeout(function g() {
+        console.log(' i am g');
+    }, 2000);
+}
+
+d();
+
+function studentnew() {
+    return 'priya student new';
+}
+
+// unanamed function or function expression
+// function expression is a function which is not declared with a name.
+// it is an anonymous function.
+// it is a function which is not declared with a name.
+
+// it is a function which is not declared with a name and it is not called by a name.
+
+//priyastudent(); // it will call the function and excute the code inside the function.
+
+var student = function () {
+   return 'priya student'; 
+}
+
+
+//priyastudent1(); // it will call the function and excute the code inside the function.
+var snewname = studentnew();
+
+let studentname = function () {
+    console.log(snewname);
+}
+
+studentname(); // it will call the function and excute the code inside the function.
 
 
 
