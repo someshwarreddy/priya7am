@@ -1,6 +1,6 @@
 // we have three types var , let, const
-
-console.log(newone);
+//  console.log(iamvar);
+console.log(aName);
 var aName = 10;
 console.log(aName)
 // defult value is undefined untill username is intilize for var key word
@@ -60,29 +60,30 @@ student();
 
 // var is a function scoped
 
-var globalvar = 'i am global var';
+var globalvar = 'priya allrounder';
 let iamgloballet = "i am global let";
 // global variable which are accessble and re writeble 
 // every where in program.
 
 function varscope() {
     var a = 'i am function';
-    var globalvar = 'i am function scope';
-    globalvar = 'i am function scope'; // we are assigned a value for global var identifier
+    globalvar = 'i am function scope';
+    var globalvar = 'i am function scope'; // we are assigned a value for global var identifier
     console.log(globalvar); // this one excute second
-    iamgloballet = 'i function let '; // function variable
+    let iamgloballet = 'i function let '; // function variable
     // whenever we use var key word in a function for same idenifier which is declare in global scope 
     // that varibale becomes function scoped.
     // that variable value doesnot available to out side of the function.
     // here var globalvar = 'i am function scope ' it s value does not available to outside function scope 
     // because of var function scope behaviour.
     var abc = 1
-     bac = 2;
+    bac = 2;
     var dab = 0;
 
 }
+// globalvar = 'priya'; // we are assigned a value for global var identifier
 
-console.log(bac);
+// console.log(bac);
 console.log(globalvar); // function did not called so this one will excute first 
 varscope();
 
@@ -108,4 +109,4 @@ console.log(blockscope);
 console.log(iamgloballet);
 console.log(can);
 console.log(mac);
-let mac = '';
+// let mac = '';

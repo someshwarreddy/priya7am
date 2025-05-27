@@ -8,6 +8,15 @@
 // callback
 // higher order
 
+(function () {
+    // alert(' i am d');
+    var iif = 'sdfsff'
+})(); // iife (immediate invoke function)
+
+// iife (immediate invoke function) is a function which is called immediately after it is declared.
+//() declaration of function 
+//() calls the function immediately after it is declared.
+
 
 function learn() {
     // this function excutes the statemnts inside the function scope; 
@@ -68,7 +77,7 @@ one(); // one will excute second because of call stack excution.
 
 
 setTimeout(function a() {
-console.log(' i am a');
+    console.log(' i am a');
 
 }, 1000);
 
@@ -110,7 +119,7 @@ function studentnew() {
 //priyastudent(); // it will call the function and excute the code inside the function.
 
 var student = function () {
-   return 'priya student'; 
+    return 'priya student';
 }
 
 
@@ -125,8 +134,41 @@ studentname(); // it will call the function and excute the code inside the funct
 
 
 
+function a() {
+    console.log(' i am a');
+}
 
 
+var b = function () {
+    console.log(' i am b');
+}
+
+let c = function () {
+    console.log(' i am c');
+}
+
+for (var i = 0; i < 10; i++) {
+    // console.log(i);
+    
+    setTimeout(() => {
+        console.log(i);
+    }, 500);
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+    setTimeout(() => {
+        console.log(i);
+    }, 500);
+}
 
 
-
+function abc () {
+    var bvc = 10;
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
+        setTimeout(() => {
+            console.log(i);
+        }, 500);
+    }
+}
