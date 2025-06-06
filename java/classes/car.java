@@ -6,7 +6,7 @@ class vehicle {
     // instance variables are stored in heap memory
     static String type = "Car"; // Static variable, shared across all instances
 
-    String vehicletype;
+    String vehicletype = "Car"; // Instance variable, specific to each instance
     String brand;
     String color;
     double price;
@@ -30,7 +30,7 @@ class vehicle {
         // local variables are not stored in constant pool memory
         // local variables are not stored in heap memory
         // local variables are not stored in method area memory
-        int year;
+        // int year;
 
         System.out.println("Car Type: " + vehicletype);
         System.out.println("Car Brand: " + brand);
@@ -46,7 +46,8 @@ public class car {
 
         // Creating an instance of cartype
         vehicle myCar = new vehicle();
-
+        vehicle newCar = new vehicle();
+ System.out.println("New Vehicle Type: fhfhfdfdfghfghfhfhfh " + myCar.vehicletype);
         // Displaying car details
         myCar.displayDetails();
 
@@ -57,6 +58,8 @@ public class car {
         System.out.println("Updated Car Price: " + myCar.price);
         vehicle.type = "SUV"; // Changing the static variable
         System.out.println("Vehicle Type: " + vehicle.type); // Accessing static variable
+        System.out.println("New Vehicle Type: " + newCar.vehicletype); // Accessing static variable from another instance
+        System.out.println("New Vehicle Type: " + myCar.vehicletype); // Accessing static variable from the same instance
         // Static variables are shared across all instances of the class
         // Static variables are stored in method area memory
         // Static variables are not stored in heap memory
